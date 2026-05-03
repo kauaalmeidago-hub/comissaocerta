@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comissão Certa | Auditoria automática de comissões para corretores</title>
+    <meta name="description" content="Audite pagamentos de operadoras com inteligência artificial, encontre comissões divergentes e gere evidências para cobrar o que é seu.">
+    <meta property="og:title" content="Comissão Certa | Auditoria automática de comissões">
+    <meta property="og:description" content="A plataforma que ajuda corretores de seguros a conferir se cada comissão foi paga corretamente.">
+    <meta property="og:image" content="assets/logo-og.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container header-container">
+            <a href="#inicio" class="brand" aria-label="Comiss&atilde;o Certa">
+                <span class="brand-coin" aria-hidden="true">
+                    <img src="assets/logo.png" alt="" class="brand-mark">
+                </span>
+                <span class="brand-text"><strong>Comiss&atilde;o</strong> Certa</span>
+            </a>
+
+            <nav class="nav" data-nav aria-label="Navegação principal">
+                <a href="#solucao">Solução</a>
+                <a href="#processo">Processo</a>
+                <a href="#plataforma">Produto</a>
+                <a href="#planos">Planos</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://www.portalcomissaocerta.com.br/" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Entrar</a>
+                <a href="https://www.portalcomissaocerta.com.br/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Teste 30 dias</a>
+                <button class="menu-toggle" type="button" data-menu-toggle aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="texto" data-aos="fade-up">
+                <p class="hero-kicker">COMISS&Atilde;O CERTA PARA CORRETORES</p>
+                <h1 id="hero-title">Auditoria autom&aacute;tica de comiss&otilde;es para corretores.</h1>
+                <p class="hero-description">Cruze vendas, parcelas e relat&oacute;rios das operadoras em minutos. A IA identifica diverg&ecirc;ncias, comiss&otilde;es faltantes e gera evid&ecirc;ncias para cobran&ccedil;a com controle real do caixa.</p>
+                <a href="https://www.portalcomissaocerta.com.br/" class="hero-cta" target="_blank" rel="noopener noreferrer">Teste Agora</a>
+            </div>
+
+            <div class="imagem" data-aos="fade-up" data-aos-delay="120">
+                <img src="assets/hero-comissao-certa-btg.png" alt="Profissional analisando relat&oacute;rios financeiros em um notebook">
+            </div>
+        </section>
+
+        <section class="metric-band" aria-label="Funcionalidades principais">
+            <div class="container metric-grid">
+                <div class="metric-item" data-aos="fade-up">
+                    <span class="metric-value">Auditoria IA</span>
+                    <span class="metric-label">cruza vendas, parcelas e repasses automaticamente</span>
+                </div>
+                <div class="metric-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="metric-value" data-count="3" data-suffix=" min">0 min</span>
+                    <span class="metric-label">para transformar relatório em diagnóstico</span>
+                </div>
+                <div class="metric-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="metric-value">PDF + Excel</span>
+                    <span class="metric-label">leitura dos formatos usados pelas operadoras</span>
+                </div>
+                <div class="metric-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="metric-value">1 clique</span>
+                    <span class="metric-label">para gerar evidências de cobrança</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section problem-section" id="solucao">
+            <div class="container two-column">
+                <div class="section-copy" data-aos="fade-up">
+                    <p class="eyebrow">O problema</p>
+                    <h2 class="section-title">O sangramento invisível não aparece no relatório da operadora.</h2>
+                    <p class="section-text">Cálculos de agenciamento incorretos, parcelas de recorrência que somem e vendas que não entram no extrato corroem o caixa da corretora sem fazer barulho.</p>
+                    <p class="section-text">A Comiss&atilde;o Certa funciona como uma camada de conferência independente: cruza o que você vendeu com o que a operadora pagou e transforma suspeitas em evidências claras.</p>
+                </div>
+
+                <div class="audit-panel" data-aos="fade-up">
+                    <div class="panel-header">
+                        <span class="panel-dot"></span>
+                        <span>Auditoria em andamento</span>
+                    </div>
+                    <div class="audit-line">
+                        <span class="audit-status ok">Pago corretamente</span>
+                        <strong>R$ 4.280,00</strong>
+                    </div>
+                    <div class="audit-line active">
+                        <span class="audit-status warning">Divergente</span>
+                        <strong>R$ 612,40</strong>
+                    </div>
+                    <div class="audit-line">
+                        <span class="audit-status danger">Não encontrado</span>
+                        <strong>R$ 175,00</strong>
+                    </div>
+                    <div class="panel-footer">
+                        <span>Provas prontas para cobrança</span>
+                        <strong>Gerar PDF</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section process-section" id="processo">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <p class="eyebrow">Como funciona</p>
+                    <h2 class="section-title">Da planilha manual para uma auditoria fechada em 3 etapas.</h2>
+                    <p class="section-text">O processo foi pensado para o corretor enxergar rapidamente onde está o dinheiro esperado, o que foi pago e quais diferenças precisam ser cobradas.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <article class="step-card" data-aos="fade-up">
+                        <span class="step-number">01</span>
+                        <h3>Registre ou importe vendas</h3>
+                        <p>Centralize propostas, parcelas, recorrências e valores esperados em uma fonte confiável para conferência.</p>
+                    </article>
+                    <article class="step-card" data-aos="fade-up" data-aos-delay="100">
+                        <span class="step-number">02</span>
+                        <h3>Envie o relatório da operadora</h3>
+                        <p>Arraste arquivos PDF ou Excel para a plataforma. A IA lê layouts complexos sem exigir planilhas padronizadas.</p>
+                    </article>
+                    <article class="step-card featured" data-aos="fade-up" data-aos-delay="200">
+                        <span class="step-number">03</span>
+                        <h3>Receba o diagnóstico</h3>
+                        <p>Veja o que está certo, divergente ou ausente. Gere evidências e direcione a cobrança para a operadora.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section platform-section product-walkthrough" id="plataforma">
+            <div class="container">
+                <div class="section-header center" data-aos="fade-up">
+                    <p class="eyebrow">Produto</p>
+                    <h2 class="section-title">Veja a auditoria acontecendo dentro da plataforma.</h2>
+                    <p class="section-text">Um fluxo simples para o corretor sair do relatÃ³rio bruto da operadora e chegar em divergÃªncias, valores e evidÃªncias prontas para cobranÃ§a.</p>
+                </div>
+
+                <div class="product-demo-grid">
+                    <article class="product-video-card" data-aos="fade-up">
+                        <div class="product-video-shell">
+                            <video controls playsinline preload="auto" poster="assets/video-intro-poster.png" data-product-video data-start="2.4" data-end="8">
+                                <source src="assets/produto-demo.mp4#t=2.4" type="video/mp4">
+                                Seu navegador n&atilde;o suporta a reprodu&ccedil;&atilde;o deste v&iacute;deo.
+                            </video>
+                        </div>
+                        <div class="product-video-copy">
+                            <span>V&iacute;deo r&aacute;pido</span>
+                            <strong>Demonstra&ccedil;&atilde;o da plataforma</strong>
+                            <p>A pr&eacute;via mostra a experi&ecirc;ncia em poucos segundos, sem tirar o foco do passo a passo das telas.</p>
+                        </div>
+                    </article>
+
+                    <div class="product-carousel" data-product-carousel data-aos="fade-up" data-aos-delay="120" aria-label="Passo a passo das telas da Comiss&atilde;o Certa">
+                        <div class="carousel-top">
+                            <div>
+                                <span>Passo a passo</span>
+                                <strong>Telas da plataforma</strong>
+                            </div>
+                            <div class="carousel-controls" aria-label="Controles do carrossel">
+                                <button type="button" class="carousel-button" data-product-carousel-prev aria-label="Tela anterior">&#8249;</button>
+                                <button type="button" class="carousel-button" data-product-carousel-next aria-label="Pr&oacute;xima tela">&#8250;</button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-viewport">
+                            <div class="carousel-track" data-product-carousel-track>
+                                <article class="carousel-slide" data-product-slide>
+                                    <div class="slide-meta">
+                                        <span>01</span>
+                                        <div>
+                                            <h3>Dashboard de fechamento</h3>
+                                            <p>O corretor visualiza caixa, relat&oacute;rios processados e pend&ecirc;ncias de comiss&atilde;o em um &uacute;nico painel.</p>
+                                        </div>
+                                    </div>
+                                    <div class="slide-screen dashboard-slide">
+                                        <img src="assets/dashboard-print.png" alt="Tela de dashboard financeiro do Portal Comiss&atilde;o Certa">
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide" data-product-slide>
+                                    <div class="slide-meta">
+                                        <span>02</span>
+                                        <div>
+                                            <h3>Importa&ccedil;&atilde;o de relat&oacute;rios</h3>
+                                            <p>Vendas e arquivos PDF ou Excel entram no sistema para a IA cruzar valores esperados e pagos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="slide-screen import-slide" aria-label="Pr&eacute;via de tela de importa&ccedil;&atilde;o">
+                                        <div class="upload-zone">
+                                            <strong>Solte o relat&oacute;rio da operadora</strong>
+                                            <p>PDF, Excel ou planilha consolidada</p>
+                                        </div>
+                                        <div class="import-row">
+                                            <span>Venda cadastrada</span>
+                                            <strong>R$ 4.280,00</strong>
+                                        </div>
+                                        <div class="import-row">
+                                            <span>Relat&oacute;rio recebido</span>
+                                            <strong>operadora_maio.pdf</strong>
+                                        </div>
+                                        <button type="button">Processar IA</button>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide" data-product-slide>
+                                    <div class="slide-meta">
+                                        <span>03</span>
+                                        <div>
+                                            <h3>Auditoria autom&aacute;tica</h3>
+                                            <p>A confer&ecirc;ncia aponta o que foi pago corretamente, divergente ou n&atilde;o localizado no relat&oacute;rio.</p>
+                                        </div>
+                                    </div>
+                                    <div class="slide-screen audit-slide" aria-label="Pr&eacute;via de tela de auditoria">
+                                        <div class="audit-preview-line ok">
+                                            <span>Pago corretamente</span>
+                                            <strong>R$ 4.280,00</strong>
+                                        </div>
+                                        <div class="audit-preview-line warning">
+                                            <span>Divergente</span>
+                                            <strong>R$ 612,40</strong>
+                                        </div>
+                                        <div class="audit-preview-line danger">
+                                            <span>N&atilde;o encontrado</span>
+                                            <strong>R$ 175,00</strong>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="carousel-slide" data-product-slide>
+                                    <div class="slide-meta">
+                                        <span>04</span>
+                                        <div>
+                                            <h3>Evid&ecirc;ncia para cobran&ccedil;a</h3>
+                                            <p>O sistema organiza os dados em um material objetivo para conversar com a operadora.</p>
+                                        </div>
+                                    </div>
+                                    <div class="slide-screen evidence-slide" aria-label="Pr&eacute;via de tela de evid&ecirc;ncias">
+                                        <div class="evidence-document">
+                                            <span>PDF</span>
+                                            <strong>Evid&ecirc;ncias_Comiss&atilde;o.pdf</strong>
+                                            <p>3 diverg&ecirc;ncias documentadas com valor esperado, pago e diferen&ccedil;a.</p>
+                                        </div>
+                                        <button type="button">Gerar relat&oacute;rio</button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="carousel-dots" aria-label="Ir para tela do passo a passo">
+                            <button type="button" data-product-dot aria-label="Tela 1"></button>
+                            <button type="button" data-product-dot aria-label="Tela 2"></button>
+                            <button type="button" data-product-dot aria-label="Tela 3"></button>
+                            <button type="button" data-product-dot aria-label="Tela 4"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section detection-section">
+            <div class="container">
+                <div class="section-header center" data-aos="fade-up">
+                    <p class="eyebrow">O que a IA procura</p>
+                    <h2 class="section-title">Falhas que normalmente ficam escondidas no fechamento.</h2>
+                    <p class="section-text">A leitura automática procura padrões de perda recorrente e transforma o extrato da operadora em pontos objetivos de revisão.</p>
+                </div>
+
+                <div class="detection-grid">
+                    <article class="detection-card" data-aos="fade-up">
+                        <h3>Agenciamento incorreto</h3>
+                        <p>Compara percentuais e valores esperados com o que foi efetivamente pago.</p>
+                    </article>
+                    <article class="detection-card" data-aos="fade-up" data-aos-delay="80">
+                        <h3>Parcela recorrente ausente</h3>
+                        <p>Aponta contratos ativos em que uma recorrência deixou de aparecer no extrato.</p>
+                    </article>
+                    <article class="detection-card" data-aos="fade-up" data-aos-delay="160">
+                        <h3>Venda não reportada</h3>
+                        <p>Localiza vendas cadastradas que não constam nos arquivos enviados pela operadora.</p>
+                    </article>
+                    <article class="detection-card" data-aos="fade-up" data-aos-delay="240">
+                        <h3>Pagamento duplicado ou inconsistente</h3>
+                        <p>Marca linhas suspeitas para revisão antes que a conciliação vire retrabalho.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section comparison-section">
+            <div class="container">
+                <div class="section-header center" data-aos="fade-up">
+                    <p class="eyebrow">Mudança de modelo</p>
+                    <h2 class="section-title">Corretor analógico ou corretor com auditoria digital?</h2>
+                    <p class="section-text">A diferença está em trocar confiança cega por evidência: cada pagamento esperado passa a ter uma conferência clara.</p>
+                </div>
+
+                <div class="comparison-grid">
+                    <article class="comparison-card muted" data-aos="fade-up">
+                        <span class="comparison-label">Antes</span>
+                        <h3>Gestão por confiança</h3>
+                        <ul>
+                            <li>Relatórios da operadora aceitos sem conferência completa.</li>
+                            <li>Horas gastas em planilhas e filtros manuais.</li>
+                            <li>Perdas pequenas que se acumulam mês após mês.</li>
+                        </ul>
+                    </article>
+                    <article class="comparison-card premium" data-aos="fade-up">
+                        <span class="comparison-label">Comissão Certa</span>
+                        <h3>Gestão por evidência</h3>
+                        <ul>
+                            <li>Confirmação automática de cada pagamento esperado.</li>
+                            <li>Tempo operacional voltando para venda e relacionamento.</li>
+                            <li>Cobrança fundamentada com diagnóstico pronto.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section pricing-section" id="planos">
+            <div class="container">
+                <div class="section-header center" data-aos="fade-up">
+                    <p class="eyebrow">Planos</p>
+                    <h2 class="section-title">Planos que precisam recuperar pouco para se pagar.</h2>
+                    <p class="section-text">Comece com 30 dias para validar a auditoria no seu próprio fechamento de comissão.</p>
+
+                    <div class="pricing-toggle" aria-label="Alternar cobrança">
+                        <span class="toggle-label" id="labelMensal">Mensal</span>
+                        <label class="switch">
+                            <input type="checkbox" id="pricingToggle" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <span class="toggle-label active" id="labelAnual">Anual <small>desconto aplicado</small></span>
+                    </div>
+                </div>
+
+                <div class="pricing-grid">
+                    <article class="pricing-card" data-aos="fade-up">
+                        <div class="plan-topline">Para corretores e equipes enxutas</div>
+                        <h3>Plano Pro</h3>
+                        <div class="plan-price">
+                            <span>R$</span>
+                            <strong id="pricePro">137</strong>
+                            <small id="centsPro">,90</small>
+                            <em>/mês</em>
+                        </div>
+                        <p class="plan-billing" id="billingPro">Cobrado anualmente: R$ 1.654,80</p>
+                        <ul class="plan-features">
+                            <li>2 usuários</li>
+                            <li>30 relatórios de IA</li>
+                            <li>Dashboard profissional</li>
+                            <li>Centros de custo</li>
+                            <li>Múltiplas contas bancárias</li>
+                            <li>Suporte via WhatsApp</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary btn-full" data-open-modal="pro">Assinar Pro</a>
+                    </article>
+
+                    <article class="pricing-card highlighted" data-aos="fade-up" data-aos-delay="120">
+                        <div class="popular-badge">Mais escolhido</div>
+                        <div class="plan-topline">Para corretoras em crescimento</div>
+                        <h3>Master Business</h3>
+                        <div class="plan-price">
+                            <span>R$</span>
+                            <strong id="priceMaster">258</strong>
+                            <small id="centsMaster">,05</small>
+                            <em>/mês</em>
+                        </div>
+                        <p class="plan-billing" id="billingMaster">Cobrado anualmente: R$ 3.096,60</p>
+                        <ul class="plan-features">
+                            <li>Usuários ilimitados</li>
+                            <li>Relatórios de IA ilimitados</li>
+                            <li>DRE em regime de caixa</li>
+                            <li>Relatórios avançados</li>
+                            <li>Alertas automáticos</li>
+                            <li>Treinamento dedicado</li>
+                            <li>Suporte prioritário</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary btn-full" data-open-modal="master">Assinar Master</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq-section" id="faq">
+            <div class="container faq-container">
+                <div class="section-header center" data-aos="fade-up">
+                    <p class="eyebrow">FAQ</p>
+                    <h2 class="section-title">Perguntas frequentes</h2>
+                    <p class="section-text">Respostas diretas para entender implantação, teste, formatos aceitos e segurança da operação.</p>
+                </div>
+
+                <div class="faq-accordion" data-aos="fade-up">
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            Preciso instalar algum programa?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Não. A Comiss&atilde;o Certa é uma plataforma em nuvem. Você acessa pelo navegador, sem instalação local.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            Como funciona o teste de 30 dias?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você usa a plataforma por 30 dias para auditar comissões reais e medir o retorno antes de manter a assinatura.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            O sistema serve para qualquer operadora?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A proposta é ler arquivos PDF e Excel das operadoras e seguradoras usadas no mercado brasileiro, mesmo quando o layout muda.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            Posso usar para saúde, odonto e seguros?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim. A plataforma foi pensada para corretoras que trabalham com saúde, odonto e diferentes ramos de seguros.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            Meus dados ficam protegidos?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A plataforma deve operar com acesso controlado, dados organizados por conta e práticas de segurança adequadas ao tratamento de informações financeiras.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <div class="container final-cta-inner" data-aos="zoom-in">
+                <p class="eyebrow">Próximo fechamento</p>
+                <h2>Não espere a operadora dizer se pagou certo.</h2>
+                <p>Coloque a auditoria para trabalhar antes do próximo ciclo de comissões e transforme conferência manual em decisão financeira.</p>
+                <div class="cta-actions">
+                    <a href="https://www.portalcomissaocerta.com.br/" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Começar teste</a>
+                    <a href="#" class="btn btn-secondary btn-large" data-open-modal="specialist">Falar com especialista</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="portal-modal-layer" data-modal-root aria-hidden="true">
+        <div class="portal-modal-backdrop" data-modal-close></div>
+        <article class="portal-modal" role="dialog" aria-modal="true" aria-labelledby="portal-modal-title" aria-describedby="portal-modal-copy" tabindex="-1">
+            <button class="modal-close" type="button" data-modal-close aria-label="Fechar modal">&times;</button>
+            <span class="modal-kicker" data-modal-kicker>Pr&oacute;ximo passo</span>
+            <h2 id="portal-modal-title" data-modal-title>Continue no Portal Comiss&atilde;o Certa</h2>
+            <p id="portal-modal-copy" data-modal-copy>Voc&ecirc; ser&aacute; direcionado para o portal para seguir com a avalia&ccedil;&atilde;o.</p>
+            <ul class="modal-points" data-modal-points></ul>
+            <div class="modal-actions">
+                <a href="https://www.portalcomissaocerta.com.br/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-modal-primary>Ir para o portal</a>
+                <button class="btn btn-ghost" type="button" data-modal-close>Continuar vendo</button>
+            </div>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <a href="#inicio" class="brand footer-brand" aria-label="Comiss&atilde;o Certa">
+                <span class="brand-coin" aria-hidden="true">
+                    <img src="assets/logo.png" alt="" class="brand-mark">
+                </span>
+                <span class="brand-text"><strong>Comiss&atilde;o</strong> Certa</span>
+            </a>
+            <nav class="footer-links" aria-label="Links institucionais">
+                <a href="#">Termos de uso</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Exclusão de dados</a>
+                <a href="#">Contato</a>
+            </nav>
+            <p>© 2026 Comissão Certa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
