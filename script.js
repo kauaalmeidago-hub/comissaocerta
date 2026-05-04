@@ -125,13 +125,13 @@ document.addEventListener("DOMContentLoaded", () => {
             kicker: "Plano Pro",
             title: "Comece o teste com a estrutura ideal para equipes enxutas.",
             copy: "O portal abre em uma nova guia para voc\u00ea seguir com a avalia\u00e7\u00e3o, cadastro e acesso ao ambiente.",
-            points: ["2 usu\u00e1rios para validar o fluxo", "30 relat\u00f3rios de IA no teste", "Suporte via WhatsApp para tirar d\u00favidas"]
+            points: ["2 usu\u00e1rios para validar o fluxo", "30 relat\u00f3rios IA/m\u00eas", "An\u00e1lise de comiss\u00e3o por IA"]
         },
         master: {
             kicker: "Master Business",
             title: "Leve a auditoria para a corretora inteira.",
             copy: "O portal abre em uma nova guia para voc\u00ea continuar com a assinatura e liberar o ambiente de avalia\u00e7\u00e3o.",
-            points: ["Usu\u00e1rios ilimitados", "Relat\u00f3rios de IA ilimitados", "Treinamento e suporte priorit\u00e1rio"]
+            points: ["Usu\u00e1rios ilimitados", "Relat\u00f3rios IA ilimitados", "Treinamento e suporte priorit\u00e1rio"]
         },
         specialist: {
             kicker: "Especialista",
