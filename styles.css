@@ -3201,3 +3201,272 @@ input {
         width: min(100%, 980px);
     }
 }
+
+/* Cross-device layout guardrails */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+.header,
+main,
+section,
+footer {
+    width: 100%;
+    max-width: 100%;
+}
+
+.container,
+.header-container {
+    width: min(1180px, calc(100% - clamp(32px, 5vw, 72px)));
+    max-width: 1180px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.brand-coin::before {
+    left: -30px;
+    width: 88px;
+}
+
+@media (min-width: 841px) {
+    .header {
+        overflow: hidden;
+    }
+
+    .header-container {
+        min-width: 0;
+    }
+
+    .brand,
+    .nav,
+    .header-actions {
+        min-width: 0;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: minmax(360px, 0.42fr) minmax(0, 0.58fr);
+        height: auto;
+        min-height: clamp(560px, 72vh, 720px);
+        padding-top: 84px;
+        overflow: hidden;
+    }
+
+    .texto,
+    .imagem {
+        width: auto;
+        min-width: 0;
+    }
+
+    .texto {
+        padding: clamp(44px, 6vw, 78px) clamp(28px, 4.8vw, 72px);
+    }
+
+    .texto h1 {
+        max-width: 16ch;
+        font-size: clamp(2rem, 2.45vw, 2.75rem);
+        line-height: 1.18;
+    }
+
+    .texto .hero-description {
+        max-width: 54ch;
+        font-size: clamp(0.96rem, 1.05vw, 1.06rem);
+        line-height: 1.66;
+    }
+
+    .imagem {
+        height: auto;
+        min-height: clamp(476px, 72vh, 636px);
+    }
+
+    .imagem img {
+        object-position: 54% center;
+    }
+
+    .metric-grid,
+    .two-column,
+    .steps-grid,
+    .detection-grid,
+    .comparison-grid,
+    .pricing-grid,
+    .product-demo-grid {
+        min-width: 0;
+    }
+
+    .metric-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .metric-item {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .problem-section .section-title {
+        max-width: 12.5ch;
+        font-size: clamp(2rem, 3.5vw, 3.05rem);
+        line-height: 1.12;
+    }
+
+    .problem-section .section-text {
+        max-width: 62ch;
+    }
+
+    .audit-panel {
+        min-width: 0;
+    }
+}
+
+@media (min-width: 841px) and (max-width: 1360px) {
+    .container,
+    .header-container {
+        width: calc(100% - 48px);
+    }
+
+    .header-container {
+        gap: 16px;
+    }
+
+    .brand {
+        flex: 0 1 auto;
+        gap: 2px;
+    }
+
+    .brand-coin {
+        width: 58px;
+        flex-basis: 58px;
+    }
+
+    .brand-coin .brand-mark {
+        width: 68px;
+        height: 68px;
+    }
+
+    .brand-text {
+        font-size: 1rem;
+    }
+
+    .nav {
+        gap: clamp(12px, 1.7vw, 22px);
+        font-size: 0.88rem;
+    }
+
+    .header-actions {
+        gap: 8px;
+    }
+
+    .header-actions .btn {
+        min-height: 42px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        grid-template-columns: minmax(330px, 0.43fr) minmax(0, 0.57fr);
+        min-height: 560px;
+    }
+
+    .texto {
+        padding-right: 34px;
+        padding-left: 34px;
+    }
+
+    .texto h1 {
+        font-size: clamp(1.85rem, 2.4vw, 2.35rem);
+    }
+
+    .texto .hero-description {
+        font-size: 0.96rem;
+    }
+
+    .section {
+        padding: 72px 0;
+    }
+
+    .two-column {
+        grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+        gap: clamp(32px, 4vw, 52px);
+    }
+
+    .problem-section .section-title {
+        font-size: clamp(2rem, 3.7vw, 2.8rem);
+    }
+}
+
+@media (min-width: 841px) and (max-width: 1080px) {
+    .header {
+        overflow: visible;
+    }
+
+    .nav {
+        position: fixed;
+        top: 84px;
+        right: 24px;
+        left: auto;
+        display: grid;
+        width: min(320px, calc(100% - 48px));
+        gap: 0;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: var(--shadow-md);
+        transform: translateY(-14px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity var(--transition), transform var(--transition);
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    body.menu-open .nav {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav a {
+        padding: 13px 14px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .nav a:last-child {
+        border-bottom: 0;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 84px;
+    }
+
+    .texto {
+        padding: 44px 32px 34px;
+    }
+
+    .texto h1 {
+        max-width: 20ch;
+    }
+
+    .imagem {
+        min-height: 360px;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .problem-section .section-title {
+        max-width: 18ch;
+    }
+}
